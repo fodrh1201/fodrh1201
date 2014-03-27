@@ -47,7 +47,7 @@ namespace next
 
 			double d =
 				Math.Sqrt(Square(c1.x - c2.x) + Square(c1.y - c2.y));
-			if (Abs(c1.r - c2.r) <= d && d <= (c1.r + c2.r))  // 선분이 닿은 경우만 충돌로 판정했습니다.
+			if (d <= (c1.r + c2.r))  
 				Console.WriteLine("두 원은충돌합니다.");
 			else
 				Console.WriteLine("두 원은 충돌하지 않습니다.");
@@ -58,7 +58,7 @@ namespace next
 		}
 		static int Abs(int n)
 		{
-			//int result;
+			
 			if (n >= 0)
 				return n;
 			else
