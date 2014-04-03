@@ -25,4 +25,4 @@ namespace Next
 	}
 }
 
-
+// 지웅아 foreach몬가 이상함... 할당이 안된다고 하는디..? assign어케줘야함??
