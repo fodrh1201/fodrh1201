@@ -16,9 +16,10 @@ namespace Next
 			int[] array = new int[words.Length];
 			int count = 0;
 
-			foreach (int a in words)
+			foreach (int a in array)
 			{
-				Console.WriteLine(a);
+				a = Convert.ToInt32(words[count]);
+				count = count + 1;
 			}
 		}
 	}
